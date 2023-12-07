@@ -1,0 +1,338 @@
+                         Lattice Mapping Report File
+Design:  top
+Family:  iCE40UP
+Device:  iCE40UP5K
+Package: SG48
+Performance Grade:  High-Performance_1.2V
+
+Mapper:    version Radiant Software (64-bit) 2023.1.0.43.3
+Mapped on: Thu Dec  7 03:43:41 2023
+
+Design Information
+------------------
+
+Command line:   map -i snakey_impl_1_syn.udb -pdc
+     Z:/Users/alee46/my_designs/snakey/pin_assign.pdc -o snakey_impl_1_map.udb
+     -mp snakey_impl_1.mrp -hierrpt -gui
+
+Design Summary
+--------------
+
+   Number of slice registers: 115 out of  5280 (2%)
+   Number of I/O registers:      9 out of   117 (8%)
+   Number of LUT4s:           277 out of  5280 (5%)
+      Number of logic LUT4s:             191
+      Number of inserted feedthru LUT4s:  15
+      Number of replicated LUT4s:          1
+      Number of ripple logic:             35 (70 LUT4s)
+   Number of IO sites used:   12 out of 39 (31%)
+      Number of IO sites used for general PIO: 12
+      Number of IO sites used for I3C: 0 out of 2 (0%)
+      (note: If I3C is not used, its site can be used as general PIO)
+      Number of IO sites used for PIO+I3C: 12 out of 36 (33%)
+      Number of IO sites used for OD+RGB IO buffers: 0 out of 3 (0%)
+      (note: If RGB LED drivers are not used, sites can be used as OD outputs,
+       see TN1288 iCE40 LED Driver Usage Guide)
+      Number of IO sites used for PIO+I3C+OD+RGB: 12 out of 39 (31%)
+   Number of DSPs:             0 out of 8 (0%)
+   Number of I2Cs:             0 out of 2 (0%)
+   Number of High Speed OSCs:  0 out of 1 (0%)
+   Number of Low Speed OSCs:   0 out of 1 (0%)
+   Number of RGB PWM:          0 out of 1 (0%)
+   Number of RGB Drivers:      0 out of 1 (0%)
+   Number of SCL FILTERs:      0 out of 2 (0%)
+   Number of SRAMs:            0 out of 4 (0%)
+   Number of WARMBOOTs:        0 out of 1 (0%)
+   Number of SPIs:             0 out of 2 (0%)
+   Number of EBRs:             13 out of 30 (43%)
+   Number of PLLs:             1 out of 1 (100%)
+   Number of Clocks:  5
+      Net clk_25m: 61 loads, 61 rising, 0 falling (Driver: Pin
+     pll.lscc_pll_inst.u_PLL_B/OUTGLOBAL)
+      Net clk_in_12m_c: 1 loads, 1 rising, 0 falling (Driver: Port clk_in_12m)
+      Net clk_60hz: 39 loads, 39 rising, 0 falling (Driver: Pin
+     myvga.clk_60hz_I_0/Z)
+      Net controller.counter[20]: 14 loads, 14 rising, 0 falling (Driver: Pin
+     controller.counter_20__I_0/Q)
+      Net clock_c: 8 loads, 8 rising, 0 falling (Driver: Pin
+     controller.counter_8__I_0/Z)
+   Number of Clock Enables:  13
+      Net VCC_net: 39 loads, 0 SLICEs
+      Net print_pat.rgb_0__N_79: 6 loads, 6 SLICEs
+
+                                    Page 1
+
+
+
+
+
+Design Summary (cont)
+---------------------
+      Net n674: 2 loads, 0 SLICEs
+      Net w_addr[11]: 2 loads, 0 SLICEs
+      Net row_0__N_29: 6 loads, 6 SLICEs
+      Net controller.controllerOutput_0__N_62: 6 loads, 6 SLICEs
+      Net controller.interimShift_0__N_244: 8 loads, 8 SLICEs
+      Net snake_y_1__N_267: 7 loads, 7 SLICEs
+      Net gamelogic.w_data_1__N_105: 12 loads, 12 SLICEs
+      Net gamelogic.game_over_check_N_295: 1 loads, 1 SLICEs
+      Net gamelogic.dir_0__N_283: 1 loads, 1 SLICEs
+      Net fsm_control.s_0__N_286: 1 loads, 1 SLICEs
+      Net fsm_control.result_0__N_185: 1 loads, 1 SLICEs
+   Number of LSRs:  9
+      Net r_addr_0__N_198: 6 loads, 6 SLICEs
+      Net myvga.column_0__N_50: 6 loads, 6 SLICEs
+      Net row_0__N_30: 6 loads, 6 SLICEs
+      Net w_data_1__N_106: 1 loads, 1 SLICEs
+      Net controller.counter_2__N_236: 11 loads, 11 SLICEs
+      Net controllerOutput[1]: 1 loads, 1 SLICEs
+      Net snake_x_3__N_253: 3 loads, 3 SLICEs
+      Net snake_y_1__N_268: 4 loads, 4 SLICEs
+      Net gamelogic.game_over_check_N_296: 1 loads, 1 SLICEs
+   Top 10 highest fanout non-clock nets:
+      Net VCC_net: 43 loads
+      Net snake_y_1__N_267: 27 loads
+      Net r_addr_0__N_198: 19 loads
+      Net w_data_1__N_106: 16 loads
+      Net gamelogic.w_data_1__N_105: 13 loads
+      Net column[5]: 12 loads
+      Net column[6]: 12 loads
+      Net column[7]: 12 loads
+      Net column[8]: 12 loads
+      Net column[9]: 11 loads
+
+
+
+
+   Number of warnings:  0
+   Number of errors:    0
+
+Design Errors/Warnings
+----------------------
+
+   No errors or warnings present.
+
+IO (PIO) Attributes
+-------------------
+
++---------------------+-----------+-----------+-------+-------+-----------+
+| IO Name             | Direction | Levelmode |  IO   |  IO   | Special   |
+|                     |           |  IO_TYPE  |  REG  |  DDR  | IO Buffer |
++---------------------+-----------+-----------+-------+-------+-----------+
+| data                | INPUT     |           | I     |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| clk_in_12m          | INPUT     |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| clock               | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+
+                                    Page 2
+
+
+
+
+
+IO (PIO) Attributes (cont)
+--------------------------
+| latch               | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| rgb_out[0]          | OUTPUT    |           | O     |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| rgb_out[1]          | OUTPUT    |           | O     |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| rgb_out[2]          | OUTPUT    |           | O     |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| rgb_out[3]          | OUTPUT    |           | O     |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| rgb_out[4]          | OUTPUT    |           | O     |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| rgb_out[5]          | OUTPUT    |           | O     |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| VSYNC_out           | OUTPUT    |           | O     |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| HSYNC_out           | OUTPUT    |           | O     |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+
+Removed logic
+-------------
+
+Block i1 was optimized away.
+
+PLL/DLL Summary
+---------------
+
+PLL 1:                                 Pin/Node Value
+  PLL Instance Name:                            pll/lscc_pll_inst/u_PLL_B
+  Input Reference Clock:               PIN      clk_in_12m_c
+  Output Clock(CoreA):                          NONE
+  Output Clock(GlobalA):               NODE     clk_25m
+  Output Clock(CoreB):                          NONE
+  Output Clock(GlobalB):                        NONE
+  Feedback input:                      NODE     pll.lscc_pll_inst.feedback_w
+  Internal Feedback output:            NODE     pll.lscc_pll_inst.feedback_w
+  BYPASS signal:                                GND
+  LATCH signal:                                 GND
+  Lock Signal:                                  NONE
+  Input Clock Frequency (MHz):                  NA
+  Reference Divider:                            0
+  Feedback Divider:                             66
+  VCO Divider:                                  5
+  ENABLE_ICEGATE_PORTA:                         0
+  ENABLE_ICEGATE_PORTB:                         0
+  PLLOUT_SELECT_PORTA:                          GENCLK
+  PLLOUT_SELECT_PORTB:                          GENCLK
+  SHIFTREG_DIV_MODE:                            0
+  DELAY_ADJUSTMENT_MODE_RELATIVE:               FIXED
+  FDA_RELATIVE:                                 0
+  FEEDBACK_PATH:                                SIMPLE
+  DELAY_ADJUSTMENT_MODE_FEEDBACK:               FIXED
+  FDA_FEEDBACK:                                 0
+  FILTER_RANGE:                                 1
+  EXTERNAL_DIVIDE_FACTOR:                       NONE
+  TEST Mode:                                    0
+
+
+                                    Page 3
+
+
+
+
+
+ASIC Components
+---------------
+
+Instance Name: rgb_5__I_0
+         Type: IOLOGIC
+Instance Name: rgb_0__I_0
+         Type: IOLOGIC
+Instance Name: print_pat/start_draw_screen/row_4__I_0_3
+         Type: EBR
+Instance Name: print_pat/start_draw_screen/row_4__I_0_4
+         Type: EBR
+Instance Name: print_pat/start_draw_screen/row_4__I_0_2
+         Type: EBR
+Instance Name: print_pat/snake_draw_alive/row_0__I_0_2
+         Type: EBR
+Instance Name: print_pat/ram_mod/mem2
+         Type: EBR
+Instance Name: print_pat/ram_mod/mem0
+         Type: EBR
+Instance Name: print_pat/ram_mod/mem3
+         Type: EBR
+Instance Name: print_pat/ram_mod/mem1
+         Type: EBR
+Instance Name: print_pat/end_game_rom_screen/row_4__I_0_6
+         Type: EBR
+Instance Name: print_pat/end_game_rom_screen/row_4__I_0
+         Type: EBR
+Instance Name: print_pat/end_game_rom_screen/row_4__I_0_5
+         Type: EBR
+Instance Name: print_pat/apple_draw/row_0__I_0
+         Type: EBR
+Instance Name: pll/lscc_pll_inst/u_PLL_B
+         Type: PLL
+Instance Name: rgb_1__I_0
+         Type: IOLOGIC
+Instance Name: rgb_2__I_0
+         Type: IOLOGIC
+Instance Name: rgb_3__I_0
+         Type: IOLOGIC
+Instance Name: rgb_4__I_0
+         Type: IOLOGIC
+Instance Name: hsync_I_0
+         Type: IOLOGIC
+Instance Name: controller/data_c_I_0
+         Type: IOLOGIC
+Instance Name: gamelogic/counter_0__I_0
+         Type: EBR
+Instance Name: vsync_I_0
+         Type: IOLOGIC
+
+Constraint Summary
+------------------
+
+   Total number of constraints: 13
+   Total number of constraints dropped: 0
+
+
+
+
+
+                                    Page 4
+
+
+
+
+
+Run Time and Memory Usage
+-------------------------
+
+   Total CPU Time: 0 secs
+   Total REAL Time: 0 secs
+   Peak Memory Usage: 62 MB
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    Page 5
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995
+     AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent
+     Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems
+     All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor
+     Corporation,  All rights reserved.

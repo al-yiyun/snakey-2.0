@@ -1,0 +1,143 @@
+----------------------------------------------------------------------
+Report for cell top.TECH
+Register bits:  115 of 5280 (2.178%)
+I/O cells:      12
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              EBR_B        13          100.0
+                               CCU2        35          100.0
+                            FD1P3XZ       115          100.0
+                                 IB         2          100.0
+                              IOL_B         9          100.0
+                               LUT4       190          100.0
+                                 OB        10          100.0
+                              PLL_B         1          100.0
+SUB MODULES
+                      NEScontroller         1
+                          apple_rom         1
+                          dumpy_rom         1
+                         game_logic         1
+                    game_screen_rom         1
+                              mypll         1
+mypll_ipgen_lscc_pll(DIVR="0",DIVF="66",DIVQ="5",FILTER_RANGE="1",PLLOUT_SELECT_PORTA="GENCLK",PLLOUT_SELECT_PORTB="GENCLK",FREQUENCY_PIN_REFERENCECLK="12.000000")         1
+                        pattern_gen         1
+                              ramdp         1
+                          snake_rom         1
+                   start_screen_rom         1
+                             states         1
+                                vga         1
+                              TOTAL       388
+----------------------------------------------------------------------
+Report for cell pattern_gen.v1
+Instance Path : print_pat
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              EBR_B        12           92.3
+                            FD1P3XZ         8            7.0
+                               LUT4        42           22.1
+SUB MODULES
+                          apple_rom         1
+                          dumpy_rom         1
+                    game_screen_rom         1
+                              ramdp         1
+                          snake_rom         1
+                   start_screen_rom         1
+                              TOTAL        68
+----------------------------------------------------------------------
+Report for cell start_screen_rom.v1
+Instance Path : print_pat.start_draw_screen
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              EBR_B         3           23.1
+                              TOTAL         3
+----------------------------------------------------------------------
+Report for cell dumpy_rom.v1
+Instance Path : print_pat.snake_dumpy
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3XZ         1            0.9
+                               LUT4         1            0.5
+                              TOTAL         2
+----------------------------------------------------------------------
+Report for cell snake_rom.v1
+Instance Path : print_pat.snake_draw_alive
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              EBR_B         1            7.7
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell ramdp.v1
+Instance Path : print_pat.ram_mod
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              EBR_B         4           30.8
+                            FD1P3XZ         1            0.9
+                               LUT4         3            1.6
+                              TOTAL         8
+----------------------------------------------------------------------
+Report for cell game_screen_rom.v1
+Instance Path : print_pat.end_game_rom_screen
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              EBR_B         3           23.1
+                              TOTAL         3
+----------------------------------------------------------------------
+Report for cell apple_rom.v1
+Instance Path : print_pat.apple_draw
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              EBR_B         1            7.7
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell mypll.v1
+Instance Path : pll
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              PLL_B         1          100.0
+SUB MODULES
+mypll_ipgen_lscc_pll(DIVR="0",DIVF="66",DIVQ="5",FILTER_RANGE="1",PLLOUT_SELECT_PORTA="GENCLK",PLLOUT_SELECT_PORTB="GENCLK",FREQUENCY_PIN_REFERENCECLK="12.000000")         1
+                              TOTAL         2
+----------------------------------------------------------------------
+Report for cell mypll_ipgen_lscc_pll(DIVR="0",DIVF="66",DIVQ="5",FILTER_RANGE="1",PLLOUT_SELECT_PORTA="GENCLK",PLLOUT_SELECT_PORTB="GENCLK",FREQUENCY_PIN_REFERENCECLK="12.000000").v1
+Instance Path : pll.lscc_pll_inst
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              PLL_B         1          100.0
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell vga.v1
+Instance Path : myvga
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        12           34.3
+                            FD1P3XZ        22           19.1
+                               LUT4        25           13.2
+                              TOTAL        59
+----------------------------------------------------------------------
+Report for cell NEScontroller.v1
+Instance Path : controller
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        11           31.4
+                            FD1P3XZ        42           36.5
+                              IOL_B         1           11.1
+                               LUT4        25           13.2
+                              TOTAL        79
+----------------------------------------------------------------------
+Report for cell game_logic.v1
+Instance Path : gamelogic
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              EBR_B         1            7.7
+                                FA2        12           34.3
+                            FD1P3XZ        39           33.9
+                               LUT4        83           43.7
+                              TOTAL       135
+----------------------------------------------------------------------
+Report for cell states.v1
+Instance Path : fsm_control
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3XZ         4            3.5
+                               LUT4         4            2.1
+                              TOTAL         8

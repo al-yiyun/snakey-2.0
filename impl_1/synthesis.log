@@ -1,0 +1,324 @@
+synthesis:  version Radiant Software (64-bit) 2023.1.0.43.3
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+Thu Dec  7 03:43:34 2023
+
+
+Command Line:  C:\lscc\radiant\2023.1\ispfpga\bin\nt64\synthesis.exe -f snakey_impl_1_lattice.synproj -gui -msgset Z:/Users/alee46/my_designs/snakey/promote.xml 
+
+Synthesis options:
+The -a option is iCE40UP.
+The -t option is SG48.
+The -sp option is High-Performance_1.2V.
+The -p option is iCE40UP5K.
+                                                          
+
+
+##########################################################
+
+
+### Lattice Family     : iCE40UP
+
+
+### Device             : iCE40UP5K
+
+
+### Package            : SG48
+
+
+### Performance Grade  : High-Performance_1.2V
+
+
+                                                         
+
+
+INFO <35001786> - synthesis: User-Selected Strategy Settings
+Optimization goal = Area
+Top-level module name = top.
+Target frequency = 200.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3 (default)
+RWCheckOnRam = 0
+
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+
+Mux style = auto (Default)
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+Output HDL file name = snakey_impl_1.vm.
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-sdc option: SDC file input is snakey_impl_1_cpe.ldc.
+-vh2008
+
+-path C:/lscc/radiant/2023.1/ispfpga/ice40tp/data (searchpath added)
+-path Z:/Users/alee46/my_designs/snakey (searchpath added)
+-path Z:/Users/alee46/my_designs/snakey/impl_1 (searchpath added)
+-path Z:/Users/alee46/my_designs/snakey/mypll (searchpath added)
+Mixed language design
+Verilog design file = C:/lscc/radiant/2023.1/ip/pmi/pmi_iCE40UP.v
+Verilog design file = Z:/Users/alee46/my_designs/snakey/mypll/rtl/mypll.v
+VHDL library = pmi
+VHDL design file = C:/lscc/radiant/2023.1/ip/pmi/pmi_iCE40UP.vhd
+VHDL library = work
+VHDL design file = Z:/Users/alee46/my_designs/snakey/source/impl_1/top.vhd
+VHDL library = work
+VHDL design file = Z:/Users/alee46/my_designs/snakey/source/impl_1/vga.vhd
+VHDL library = work
+VHDL design file = Z:/Users/alee46/my_designs/snakey/source/impl_1/patterngen.vhd
+VHDL library = work
+VHDL design file = Z:/Users/alee46/my_designs/snakey/source/impl_1/snake_rom.vhd
+VHDL library = work
+VHDL design file = Z:/Users/alee46/my_designs/snakey/source/impl_1/NEScontroller.vhd
+VHDL library = work
+VHDL design file = Z:/Users/alee46/my_designs/snakey/source/impl_1/game_logic.vhd
+VHDL library = work
+VHDL design file = Z:/Users/alee46/my_designs/snakey/source/impl_1/apple_rom.vhd
+VHDL library = work
+VHDL design file = Z:/Users/alee46/my_designs/snakey/source/impl_1/ram.vhd
+VHDL library = work
+VHDL design file = Z:/Users/alee46/my_designs/snakey/source/impl_1/start_screen_rom.vhd
+VHDL library = work
+VHDL design file = Z:/Users/alee46/my_designs/snakey/source/impl_1/FSM.vhd
+VHDL library = work
+VHDL design file = Z:/Users/alee46/my_designs/snakey/source/impl_1/game_screen_rom.vhd
+VHDL library = work
+VHDL design file = Z:/Users/alee46/my_designs/snakey/source/impl_1/dumpy_rom.vhd
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+WARNING <35935050> - synthesis: input port TRIM9 is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port TRIM8 is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port TRIM7 is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port TRIM6 is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port TRIM5 is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port TRIM4 is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port TRIM3 is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port TRIM2 is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port TRIM1 is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port TRIM0 is not connected on this instance. VDB-5050
+WARNING <35935050> - synthesis: input port I is not connected on this instance. VDB-5050
+Compile design.
+Compile Design Begin
+Analyzing Verilog file c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v. VERI-1482
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v(1): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_addsub.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_addsub.v(40): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../common/adder_subtractor/rtl/lscc_add_sub.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v(2): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_add.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_add.v(50): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../common/adder/rtl/lscc_adder.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v(3): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_complex_mult.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_complex_mult.v(52): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../common/complex_mult/rtl/lscc_complex_mult.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v(4): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_counter.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_counter.v(39): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../common/counter/rtl/lscc_cntr.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v(5): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_fifo.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_fifo.v(44): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../avant/fifo/rtl/lscc_fifo.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v(6): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_fifo_dc.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_fifo_dc.v(47): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../avant/fifo_dc/rtl/lscc_fifo_dc.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v(7): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_mac.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_mac.v(52): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../common/mult_accumulate/rtl/lscc_mult_accumulate.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v(8): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_multaddsubsum.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_multaddsubsum.v(53): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../common/mult_add_sub_sum/rtl/lscc_mult_add_sub_sum.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v(9): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_multaddsub.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_multaddsub.v(52): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../common/mult_add_sub/rtl/lscc_mult_add_sub.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v(10): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_mult.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_mult.v(51): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../common/multiplier/rtl/lscc_multiplier.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v(11): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_ram_dp.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ram_dp.v(48): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../avant/ram_dp/rtl/lscc_ram_dp.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v(12): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_ram_dq.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ram_dq.v(45): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../avant/ram_dq/rtl/lscc_ram_dq.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v(13): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_rom.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_rom.v(45): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../avant/rom/rtl/lscc_rom.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v(14): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_sub.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_sub.v(50): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../common/subtractor/rtl/lscc_subtractor.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v(15): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_ram_dp_be.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ram_dp_be.v(49): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../avant/ram_dp/rtl/lscc_ram_dp.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v(16): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_ram_dq_be.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ram_dq_be.v(45): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/../avant/ram_dq/rtl/lscc_ram_dq.v. VERI-1328
+INFO <35901328> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.v(17): analyzing included file c:/lscc/radiant/2023.1/ip/pmi/pmi_dsp.v. VERI-1328
+Analyzing Verilog file z:/users/alee46/my_designs/snakey/mypll/rtl/mypll.v. VERI-1482
+Analyzing VHDL file c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.vhd. VHDL-1481
+Analyzing VHDL file c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.vhd
+
+INFO <35921014> - synthesis: c:/lscc/radiant/2023.1/ip/pmi/pmi_ice40up.vhd(4): analyzing package components. VHDL-1014
+Analyzing VHDL file z:/users/alee46/my_designs/snakey/source/impl_1/top.vhd. VHDL-1481
+Analyzing VHDL file z:/users/alee46/my_designs/snakey/source/impl_1/top.vhd
+
+INFO <35921012> - synthesis: z:/users/alee46/my_designs/snakey/source/impl_1/top.vhd(5): analyzing entity top. VHDL-1012
+INFO <35921010> - synthesis: z:/users/alee46/my_designs/snakey/source/impl_1/top.vhd(19): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file z:/users/alee46/my_designs/snakey/source/impl_1/vga.vhd. VHDL-1481
+Analyzing VHDL file z:/users/alee46/my_designs/snakey/source/impl_1/vga.vhd
+
+INFO <35921012> - synthesis: z:/users/alee46/my_designs/snakey/source/impl_1/vga.vhd(5): analyzing entity vga. VHDL-1012
+INFO <35921010> - synthesis: z:/users/alee46/my_designs/snakey/source/impl_1/vga.vhd(16): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file z:/users/alee46/my_designs/snakey/source/impl_1/patterngen.vhd. VHDL-1481
+Analyzing VHDL file z:/users/alee46/my_designs/snakey/source/impl_1/patterngen.vhd
+
+INFO <35921012> - synthesis: z:/users/alee46/my_designs/snakey/source/impl_1/patterngen.vhd(5): analyzing entity pattern_gen. VHDL-1012
+INFO <35921010> - synthesis: z:/users/alee46/my_designs/snakey/source/impl_1/patterngen.vhd(38): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file z:/users/alee46/my_designs/snakey/source/impl_1/snake_rom.vhd. VHDL-1481
+Analyzing VHDL file z:/users/alee46/my_designs/snakey/source/impl_1/snake_rom.vhd
+
+INFO <35921012> - synthesis: z:/users/alee46/my_designs/snakey/source/impl_1/snake_rom.vhd(5): analyzing entity snake_rom. VHDL-1012
+INFO <35921010> - synthesis: z:/users/alee46/my_designs/snakey/source/impl_1/snake_rom.vhd(14): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file z:/users/alee46/my_designs/snakey/source/impl_1/nescontroller.vhd. VHDL-1481
+Analyzing VHDL file z:/users/alee46/my_designs/snakey/source/impl_1/nescontroller.vhd
+
+INFO <35921012> - synthesis: z:/users/alee46/my_designs/snakey/source/impl_1/nescontroller.vhd(5): analyzing entity nescontroller. VHDL-1012
+INFO <35921010> - synthesis: z:/users/alee46/my_designs/snakey/source/impl_1/nescontroller.vhd(15): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file z:/users/alee46/my_designs/snakey/source/impl_1/game_logic.vhd. VHDL-1481
+Analyzing VHDL file z:/users/alee46/my_designs/snakey/source/impl_1/game_logic.vhd
+
+INFO <35921012> - synthesis: z:/users/alee46/my_designs/snakey/source/impl_1/game_logic.vhd(5): analyzing entity game_logic. VHDL-1012
+INFO <35921010> - synthesis: z:/users/alee46/my_designs/snakey/source/impl_1/game_logic.vhd(31): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file z:/users/alee46/my_designs/snakey/source/impl_1/apple_rom.vhd. VHDL-1481
+Analyzing VHDL file z:/users/alee46/my_designs/snakey/source/impl_1/apple_rom.vhd
+
+INFO <35921012> - synthesis: z:/users/alee46/my_designs/snakey/source/impl_1/apple_rom.vhd(5): analyzing entity apple_rom. VHDL-1012
+INFO <35921010> - synthesis: z:/users/alee46/my_designs/snakey/source/impl_1/apple_rom.vhd(14): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file z:/users/alee46/my_designs/snakey/source/impl_1/ram.vhd. VHDL-1481
+Analyzing VHDL file z:/users/alee46/my_designs/snakey/source/impl_1/ram.vhd
+
+INFO <35921012> - synthesis: z:/users/alee46/my_designs/snakey/source/impl_1/ram.vhd(7): analyzing entity ramdp. VHDL-1012
+INFO <35921010> - synthesis: z:/users/alee46/my_designs/snakey/source/impl_1/ram.vhd(23): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file z:/users/alee46/my_designs/snakey/source/impl_1/start_screen_rom.vhd. VHDL-1481
+Analyzing VHDL file z:/users/alee46/my_designs/snakey/source/impl_1/start_screen_rom.vhd
+
+INFO <35921012> - synthesis: z:/users/alee46/my_designs/snakey/source/impl_1/start_screen_rom.vhd(5): analyzing entity start_screen_rom. VHDL-1012
+INFO <35921010> - synthesis: z:/users/alee46/my_designs/snakey/source/impl_1/start_screen_rom.vhd(14): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file z:/users/alee46/my_designs/snakey/source/impl_1/fsm.vhd. VHDL-1481
+Analyzing VHDL file z:/users/alee46/my_designs/snakey/source/impl_1/fsm.vhd
+
+INFO <35921012> - synthesis: z:/users/alee46/my_designs/snakey/source/impl_1/fsm.vhd(4): analyzing entity states. VHDL-1012
+INFO <35921010> - synthesis: z:/users/alee46/my_designs/snakey/source/impl_1/fsm.vhd(14): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file z:/users/alee46/my_designs/snakey/source/impl_1/game_screen_rom.vhd. VHDL-1481
+Analyzing VHDL file z:/users/alee46/my_designs/snakey/source/impl_1/game_screen_rom.vhd
+
+INFO <35921012> - synthesis: z:/users/alee46/my_designs/snakey/source/impl_1/game_screen_rom.vhd(5): analyzing entity game_screen_rom. VHDL-1012
+INFO <35921010> - synthesis: z:/users/alee46/my_designs/snakey/source/impl_1/game_screen_rom.vhd(14): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file z:/users/alee46/my_designs/snakey/source/impl_1/dumpy_rom.vhd. VHDL-1481
+Analyzing VHDL file z:/users/alee46/my_designs/snakey/source/impl_1/dumpy_rom.vhd
+
+INFO <35921012> - synthesis: z:/users/alee46/my_designs/snakey/source/impl_1/dumpy_rom.vhd(5): analyzing entity dumpy_rom. VHDL-1012
+INFO <35921010> - synthesis: z:/users/alee46/my_designs/snakey/source/impl_1/dumpy_rom.vhd(14): analyzing architecture synth. VHDL-1010
+INFO <35921504> - synthesis: The default VHDL library search path is now "Z:/Users/alee46/my_designs/snakey/impl_1". VHDL-1504
+Top module language type = VHDL.
+WARNING <35935049> - synthesis: input port sclk_i remains unconnected for this instance. VDB-5049
+WARNING <35935049> - synthesis: input port sdi_i remains unconnected for this instance. VDB-5049
+Top module name (VHDL, mixed language): top
+                                                         
+
+
+### Number of Logic Cells: 5280
+
+
+### Number of RAM Blocks: 30
+
+
+### Number of DSP Blocks: 8
+
+
+### Number of PLLs: 1
+
+
+### Number of IO Pins: 56
+
+
+##########################################################
+
+
+                                                         
+
+
+CRITICAL <35001747> - synthesis: Bit 9 of Register counterx is stuck at Zero
+CRITICAL <35001747> - synthesis: Bit 8 of Register counterx is stuck at Zero
+CRITICAL <35001747> - synthesis: Bit 7 of Register counterx is stuck at Zero
+CRITICAL <35001747> - synthesis: Bit 6 of Register counterx is stuck at Zero
+CRITICAL <35001747> - synthesis: Bit 9 of Register countery is stuck at Zero
+CRITICAL <35001747> - synthesis: Bit 8 of Register countery is stuck at Zero
+CRITICAL <35001747> - synthesis: Bit 7 of Register countery is stuck at Zero
+CRITICAL <35001747> - synthesis: Bit 6 of Register countery is stuck at Zero
+CRITICAL <35001747> - synthesis: Bit 5 of Register countery is stuck at Zero
+WARNING <35935049> - synthesis: input port sclk_i remains unconnected for this instance. VDB-5049
+WARNING <35935049> - synthesis: input port sdi_i remains unconnected for this instance. VDB-5049
+WARNING <35931002> - synthesis: z:/users/alee46/my_designs/snakey/mypll/rtl/mypll.v(139): net \pll/lscc_pll_inst/sclk_i does not have a driver. VDB-1002
+WARNING <35931002> - synthesis: z:/users/alee46/my_designs/snakey/mypll/rtl/mypll.v(140): net \pll/lscc_pll_inst/sdi_i does not have a driver. VDB-1002
+######## Missing driver on net \pll/lscc_pll_inst/sclk_i. Patching with GND.
+######## Missing driver on net \pll/lscc_pll_inst/sdi_i. Patching with GND.
+
+
+
+CRITICAL <35001747> - synthesis: Bit 5 of Register \gamelogic/snake_y is stuck at Zero
+######## Found 1 RTL RAMs in the design.
+######## Mapping RTL RAM \print_pat/ram_mod/mem to 4 EBR blocks in PSEUDO_DUAL_PORT Mode
+
+Duplicate register/latch removal. i259 is a one-to-one match with i263.
+CRITICAL <35001748> - synthesis: Bit 1 of Register \print_pat/snake_dumpy/rgb is stuck at One
+WARNING <35935040> - synthesis: Register \gamelogic/write_ena clock is stuck at One. VDB-5040
+WARNING <35935040> - synthesis: Register \fsm_control/result_i2 clock is stuck at Zero. VDB-5040
+WARNING <35935040> - synthesis: Register \gamelogic/w_data__i2 clock is stuck at Zero. VDB-5040
+Duplicate register/latch removal. \print_pat/snake_dumpy/rgb_i1 is a one-to-one match with \print_pat/snake_dumpy/rgb_i3.
+Duplicate register/latch removal. \print_pat/snake_dumpy/rgb_i4 is a one-to-one match with \print_pat/snake_dumpy/rgb_i2.
+WARNING <35935040> - synthesis: Register \print_pat/snake_dumpy/rgb_i1 clock is stuck at Zero. VDB-5040
+WARNING <35001779> - synthesis: Initial value found on instance \gamelogic/dir__i0 will be ignored.
+WARNING <35001779> - synthesis: Initial value found on instance \gamelogic/dir__i1 will be ignored.
+INFO <35002039> - synthesis: Special Primitives IFD1P3AZ and OFD1P3AZ for ThunderPlus are synthesized using IOL_B.
+
+################### Begin Area Report (top)######################
+Number of register bits => 115 of 5280 (2 % )
+EBR_B => 13
+CCU2 => 35
+FD1P3XZ => 115
+IB => 2
+IOL_B => 9
+LUT4 => 190
+OB => 10
+PLL_B => 1
+################### End Area Report ##################
+Number of odd-length carry chains : 1
+Number of even-length carry chains : 5
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 4
+  Net : pll/lscc_pll_inst/clk_25m, loads : 0
+  Net : controller/clock_c, loads : 1
+  Net : clk_in_12m_c, loads : 1
+  Net : myvga/clk_60hz, loads : 0
+Clock Enable Nets
+Number of Clock Enables: 0
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : gamelogic/snake_y_1__N_267, loads : 27
+  Net : controller/counter_2__N_236, loads : 21
+  Net : myvga/r_addr_0__N_198, loads : 18
+  Net : controller/counter[20], loads : 16
+  Net : gamelogic/w_data_1__N_106, loads : 15
+  Net : gamelogic/w_data_1__N_105, loads : 13
+  Net : myvga/column[8], loads : 11
+  Net : myvga/column[7], loads : 11
+  Net : myvga/column[6], loads : 11
+  Net : myvga/column[5], loads : 11
+################### End Clock Report ##################
+
+Peak Memory Usage: 156 MB
+
+--------------------------------------------------------------
+Total CPU Time: 4 secs 
+Total REAL Time: 6 secs 
+--------------------------------------------------------------

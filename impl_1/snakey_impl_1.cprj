@@ -1,0 +1,8 @@
+-ver "C:/lscc/radiant/2023.1/ip/pmi/pmi_iCE40UP.v"
+-lib pmi -vhd "C:/lscc/radiant/2023.1/ip/pmi/pmi_iCE40UP.vhd"
+-lib "work" -vhd "Z:/Users/alee46/my_designs/snakey/source/impl_1/top.vhd" "Z:/Users/alee46/my_designs/snakey/source/impl_1/vga.vhd" "Z:/Users/alee46/my_designs/snakey/source/impl_1/patterngen.vhd" "Z:/Users/alee46/my_designs/snakey/source/impl_1/snake_rom.vhd" "Z:/Users/alee46/my_designs/snakey/source/impl_1/NEScontroller.vhd" "Z:/Users/alee46/my_designs/snakey/source/impl_1/game_logic.vhd" "Z:/Users/alee46/my_designs/snakey/source/impl_1/apple_rom.vhd" "Z:/Users/alee46/my_designs/snakey/source/impl_1/ram.vhd" "Z:/Users/alee46/my_designs/snakey/source/impl_1/start_screen_rom.vhd" "Z:/Users/alee46/my_designs/snakey/source/impl_1/FSM.vhd" "Z:/Users/alee46/my_designs/snakey/source/impl_1/game_screen_rom.vhd" "Z:/Users/alee46/my_designs/snakey/source/impl_1/dumpy_rom.vhd"
+-path "Z:/Users/alee46/my_designs/snakey"
+-vh2008
+-top top
+-isTop
+-a "iCE40UP"

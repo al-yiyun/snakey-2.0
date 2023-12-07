@@ -1,0 +1,18 @@
+#Start recording tcl command: 12/4/2023 13:28:00
+#Project Location: Z:/Users/alee46/my_designs/snakey; Project name: snakey
+prj_open "Z:/Users/alee46/my_designs/snakey/snakey.rdf"
+prj_run PAR -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run PAR -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+#Stop recording: 12/4/2023 15:10:09

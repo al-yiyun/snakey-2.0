@@ -1,0 +1,5 @@
+#Start recording tcl command: 12/3/2023 17:40:06
+#Project Location: Z:/Users/alee46/my_designs/snakey; Project name: snakey
+prj_open "Z:/Users/alee46/my_designs/snakey/snakey.rdf"
+launch_programmer_prj "C:/lscc/radiant/2023.1"
+#Stop recording: 12/3/2023 17:41:44

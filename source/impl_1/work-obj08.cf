@@ -1,0 +1,31 @@
+v 4
+file . "start_screen_rom.vhd" "3caa868594765a077ef0bbbeb8db3e47f14cafc3" "20231206035421.248":
+  entity start_screen_rom at 1( 0) + 0 on 125;
+  architecture synth of start_screen_rom at 14( 277) + 0 on 126;
+file . "ram.vhd" "0f03934299f547551edd960a77bedf38afcdcf21" "20231206035421.206":
+  entity ramdp at 3( 62) + 0 on 121;
+  architecture synth of ramdp at 23( 761) + 0 on 122;
+file . "apple_rom.vhd" "52557712e9d128fc05a0182a2a4cf28af3b2128a" "20231206035421.167":
+  entity apple_rom at 1( 0) + 0 on 113;
+  architecture synth of apple_rom at 14( 263) + 0 on 114;
+file . "snake_rom.vhd" "e76b68cbe9ae88deb0e9389c7a36a93dd14a6de1" "20231206035421.221":
+  entity snake_rom at 1( 0) + 0 on 123;
+  architecture synth of snake_rom at 14( 263) + 0 on 124;
+file . "NEScontroller.vhd" "398a2fb0896af1f8f6cbe7c74580eb767badc82b" "20231206035421.181":
+  entity controller at 1( 0) + 0 on 117;
+  architecture synth of controller at 14( 247) + 0 on 118;
+file . "background_rom.vhd" "ca5b5cb0150c096530ac97fb79f962ba5cfb885e" "20231203192748.198":
+  entity background_rom at 1( 0) + 0 on 11;
+  architecture synth of background_rom at 14( 273) + 0 on 12;
+file . "patterngen.vhd" "39ab713e5be5394d13b13d9543328bdcac0c949d" "20231206035421.194":
+  entity pattern_gen at 1( 0) + 0 on 119;
+  architecture synth of pattern_gen at 26( 778) + 0 on 120;
+file . "top.vhd" "81239fccca1fd555ccb1a0c0cd48c2535ef89748" "20231206035421.261":
+  entity top at 1( 0) + 0 on 127;
+  architecture synth of top at 19( 369) + 0 on 128;
+file . "vga.vhd" "cec04ebb410f503b1af5160be551fffcb4598c6d" "20231206035421.272":
+  entity vga at 1( 0) + 0 on 129;
+  architecture synth of vga at 16( 290) + 0 on 130;
+file . "game_logic.vhd" "305318455a46feba7af50a5a4a17de0db9163a96" "20231206035421.170":
+  entity game_logic at 1( 0) + 0 on 115;
+  architecture synth of game_logic at 19( 366) + 0 on 116;
