@@ -88,20 +88,10 @@ begin
 	
 	
 	process(clk) begin
-		--if (reset_in) then
-			--write_ena <= '1';
-			--snake_x <= "001111";
-			--snake_y <= "001111";
-			--dir <= "11";
 		if rising_edge(clk) then
 			counter <= counter + 5b"1";
 			counterx <= ((counterx + 10b"1") mod 40);
 			countery <= ((countery + 10b"1") mod 30);
-			
-			--if (counter = 30) then
-				--write_ena <= '1';
-				--w_addr <= std_logic_vector(last_tail_y) & std_logic_vector(last_tail_x);
-				--w_data <= "000"; -- erase
 			if (counter = 29) then
 				-- draw the body/tail
 				write_ena <= '1';				
@@ -146,14 +136,6 @@ begin
 				   "01" when controller(0) = '1' else --right
 				   "10" when controller(3) = '1' else --up
 				   "11" when controller(2) = '1'; -- down	
-			--if (next_pos_x > 39 or next_pos_y > 29) then
-				--end_sig <= '1';
-			--else 
-				--end_sig <= '0';
-			--end if;
-			-- controller(6) = '1' else '0';
-					-- else "01";
-			
 		end if;
 
 	end process;
